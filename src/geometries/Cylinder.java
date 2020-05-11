@@ -5,19 +5,16 @@ import primitives.Ray;
 import primitives.Vector;
 
 public class Cylinder extends Tube {
-   double _height;
+    Ray _axis;
 
-    public Cylinder(double _radius, Ray _axisRay, double _height) {
+    public Cylinder(double _radius, Ray _axisRay) {
         super(_radius, _axisRay);
-        this._height = _height;
     }
 
-    public Cylinder(RadialGeometry radial, Ray _axisRay, double _height) {
+    public Cylinder(RadialGeometry radial, Ray _axisRay) {
         super(radial, _axisRay);
-        this._height = _height;
     }
 
-    @Override
     public Vector getNormal(Point3D p) {
         return null;
     }

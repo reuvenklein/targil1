@@ -7,6 +7,12 @@ public class Point3D {
     Coordinate y;
     Coordinate z;
     public final static Point3D ZERO = new Point3D(0.0, 0.0, 0.0);
+    public Point3D(Point3D p1)
+    {
+        this.x=p1.x;
+        this.y=p1.y;
+        this.z=p1.z;
+    }
 
     public Point3D(Coordinate x, Coordinate y, Coordinate z) {
 
@@ -73,7 +79,10 @@ public class Point3D {
     }
 
 
-
-
+    public Point3D subtract(Vector v) {
+        return new Point3D(this.x.get() - v.head.x.get(),
+                this.y.get() -v.head.y.get(),
+                this.z.get() - v.head.z.get());
+    }
 }
 
