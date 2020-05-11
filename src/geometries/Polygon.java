@@ -1,5 +1,6 @@
 package geometries;
 
+import java.util.Arrays;
 import java.util.List;
 import primitives.*;
 import static primitives.Util.*;
@@ -45,7 +46,7 @@ public class Polygon implements Geometry {
         if (vertices.length < 3)
             throw new IllegalArgumentException("A polygon can't have less than 3 vertices");
         //_vertices = List.of(vertices);
-        _vertices = java.util.Arrays.asList(vertices);
+        _vertices = Arrays.asList(vertices);
         // Generate the plane according to the first three vertices and associate the
         // polygon with this plane.
         // The plane holds the invariant normal (orthogonal unit) vector to the polygon
@@ -84,5 +85,10 @@ public class Polygon implements Geometry {
     @Override
     public Vector getNormal(Point3D point) {
         return _plane.getNormal();
+    }
+
+    @Override
+    public List<Point3D> findIntersections(Ray ray) {
+        return null;
     }
 }

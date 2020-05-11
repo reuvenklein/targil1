@@ -29,7 +29,20 @@ public class Vector {
         this(new Coordinate(x), new Coordinate(y), new Coordinate(z));
     }
 
+    public Vector(Point3D p1, Point3D p2) {
+        this.head=new Point3D(p1.x.get()-p2.x.get(),
+                p1.y.get()-p2.y.get(),
+                p1.z.get()-p2.z.get()
 
+        );
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "head=" + head +
+                '}';
+    }
 
     public Point3D getHead() {
         return new Point3D(head.x,head.y,head.z);
@@ -57,7 +70,7 @@ public class Vector {
                 vector.head.z.get() - this.head.z.get());
     }
     //function gets a number and adds it to the vector and returns a new vector
-    public Vector scale(int number)
+    public Vector scale(double number)
     {
         return new Vector(this.head.x.get()*number,
                 this.head.y.get()*number,
