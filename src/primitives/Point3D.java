@@ -1,7 +1,7 @@
 package primitives;
 
 import java.util.Objects;
-
+import static java.lang.Math.sqrt;
 public class Point3D {
     Coordinate x;
     Coordinate y;
@@ -73,9 +73,9 @@ public class Point3D {
         );
     }
 
-    public double distanceSquared(Point3D p1, Point3D p2)
+    public double distanceSquared(Point3D p1)
     {
-        return (p1.x.get()-p2.x.get())*(p1.x.get()-p2.x.get())+(p1.y.get()-p2.y.get())*(p1.y.get()-p2.y.get())+(p1.z.get()-p2.z.get())*(p1.z.get()-p2.z.get());
+        return (p1.x.get()-this.x.get())*(p1.x.get()-this.x.get())+(p1.y.get()-this.y.get())*(p1.y.get()-this.y.get())+(p1.z.get()-this.z.get())*(p1.z.get()-this.z.get());
     }
 
 
@@ -83,6 +83,10 @@ public class Point3D {
         return new Point3D(this.x.get() - v.head.x.get(),
                 this.y.get() -v.head.y.get(),
                 this.z.get() - v.head.z.get());
+    }
+
+    public double distance(Point3D point) {
+        return sqrt(this.distanceSquared(point));
     }
 }
 

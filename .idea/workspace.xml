@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618ee78f-69b9-48c5-a954-1d0dc641e454" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/elements/AmbientLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/Render.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Targil_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Targil_1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/primitives/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/primitives/Point3D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/primitives/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +42,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="reuvenklein" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Targil_2" />
   </component>
   <component name="ProjectId" id="1ZaSsLW0Bcx2mTNH6yoRGZOSlGj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,6 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -61,21 +83,35 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="renderer" />
       <recent name="elements" />
       <recent name="geometries" />
       <recent name="primitives" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="scene" />
       <recent name="geometries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlaneTest.findIntersection">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+  <component name="RunManager" selected="JUnit.RenderTests.basicRenderTwoColorTest">
+    <configuration name="ImageWriterTest.writeToImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Targil_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.ImageWriterTest" />
+      <option name="METHOD_NAME" value="writeToImage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +147,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RenderTests.basicRenderTwoColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Targil_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="renderer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="renderer" />
+      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
+      <option name="METHOD_NAME" value="basicRenderTwoColorTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SphereTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Targil_1" />
       <extension name="coverage">
@@ -122,22 +174,6 @@
       <option name="PACKAGE_NAME" value="geometries" />
       <option name="MAIN_CLASS_NAME" value="geometries.SphereTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SphereTest.findIntersectionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometries" />
-      <option name="MAIN_CLASS_NAME" value="geometries.SphereTest" />
-      <option name="METHOD_NAME" value="findIntersectionsTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -160,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest" />
+        <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
         <item itemvalue="JUnit.PlaneTest.findIntersection" />
         <item itemvalue="JUnit.SphereTest.findIntersectionsTestEP_1" />
         <item itemvalue="JUnit.SphereTest" />
-        <item itemvalue="JUnit.SphereTest.findIntersectionsTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +230,13 @@
       <workItem from="1587326588807" duration="81732000" />
       <workItem from="1588075153815" duration="9806000" />
       <workItem from="1588108090616" duration="93000" />
-      <workItem from="1589211675071" duration="546000" />
+      <workItem from="1589211675071" duration="872000" />
+      <workItem from="1589222224988" duration="27251000" />
+      <workItem from="1589726846627" duration="2775000" />
+      <workItem from="1589788387023" duration="15000" />
+      <workItem from="1589911350027" duration="2946000" />
+      <workItem from="1590434805736" duration="3909000" />
+      <workItem from="1590442469933" duration="10886000" />
     </task>
     <task id="LOCAL‎00001" summary="123">
       <created>1589211963385</created>
@@ -202,7 +244,19 @@
       <option name="presentableId" value="LOCAL‎00001" />
       <updated>1589211963385</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL‎00002" summary="Hello">
+      <created>1589212332588</created>
+      <option name="number" value="LOCAL‎00002" />
+      <option name="presentableId" value="LOCAL‎00002" />
+      <updated>1589212332588</updated>
+    </task>
+    <task id="LOCAL‎00003" summary="Hello">
+      <created>1589212403698</created>
+      <option name="number" value="LOCAL‎00003" />
+      <option name="presentableId" value="LOCAL‎00003" />
+      <updated>1589212403698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +264,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
-    <option name="LAST_COMMIT_MESSAGE" value="123" />
+    <MESSAGE value="Hello" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hello" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="0" key="#Notifications" timestamp="1585822651455">
@@ -225,14 +280,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="92" y="92" width="1096" height="496" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1587996325133" />
-    <state x="445" y="56" key="#com.intellij.ide.util.MemberChooser" timestamp="1588002478732">
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1590496630568">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="445" y="56" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1588002478732" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589212328577">
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590496630568" />
+    <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589309408381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589212328577" />
+    <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1589309408381" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589212399010">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589212399010" />
     <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1585852572304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -253,38 +312,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585835385527" />
-    <state width="1281" height="212" key="GridCell.Tab.0.bottom" timestamp="1588074622806">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom" timestamp="1590497514609">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588074622806" />
-    <state width="1281" height="212" key="GridCell.Tab.0.center" timestamp="1588074622805">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590497514609" />
+    <state width="1281" height="170" key="GridCell.Tab.0.center" timestamp="1590497514538">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588074622805" />
-    <state width="1281" height="212" key="GridCell.Tab.0.left" timestamp="1588074622805">
+    <state width="1281" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590497514538" />
+    <state width="1281" height="170" key="GridCell.Tab.0.left" timestamp="1590497514526">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588074622805" />
-    <state width="1281" height="212" key="GridCell.Tab.0.right" timestamp="1588074622805">
+    <state width="1281" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590497514526" />
+    <state width="1281" height="170" key="GridCell.Tab.0.right" timestamp="1590497514538">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588074622805" />
-    <state width="1281" height="212" key="GridCell.Tab.1.bottom" timestamp="1588074622806">
+    <state width="1281" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590497514538" />
+    <state width="1281" height="212" key="GridCell.Tab.1.bottom" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588074622806" />
-    <state width="1281" height="212" key="GridCell.Tab.1.center" timestamp="1588074622806">
+    <state width="1281" height="212" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590495085224" />
+    <state width="1281" height="212" key="GridCell.Tab.1.center" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1588074622806" />
-    <state width="1281" height="212" key="GridCell.Tab.1.left" timestamp="1588074622806">
+    <state width="1281" height="212" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1590495085224" />
+    <state width="1281" height="212" key="GridCell.Tab.1.left" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1588074622806" />
-    <state width="1281" height="212" key="GridCell.Tab.1.right" timestamp="1588074622806">
+    <state width="1281" height="212" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1590495085224" />
+    <state width="1281" height="212" key="GridCell.Tab.1.right" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="212" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1588074622806" />
+    <state width="1281" height="212" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1590495085224" />
     <state x="220" y="75" key="IDE.errors.dialog" timestamp="1585827824537">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -301,22 +360,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="60" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585852582392" />
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1589212391651">
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1589212412015">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589212391651" />
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1589211674471">
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589212412015" />
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1590442469139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589211674471" />
-    <state x="345" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588107370916">
+    <state x="336" y="164" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1590442469139" />
+    <state x="345" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1589285418161">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="345" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1588107370916" />
-    <state x="411" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1588106511952">
+    <state x="345" y="233" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1589285418161" />
+    <state x="411" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589310082844">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="411" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1588106511952" />
+    <state x="411" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1589310082844" />
     <state x="22" y="0" key="new project wizard" timestamp="1585852117608">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
