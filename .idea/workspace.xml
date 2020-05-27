@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618ee78f-69b9-48c5-a954-1d0dc641e454" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/elements/AmbientLight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/primitives/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/ImageWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/Render.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/ImageWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Targil_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Targil_1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/primitives/Point3D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/primitives/Point3D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/elements/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/primitives/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/primitives/Point3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/primitives/VectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/AmbientLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Render.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +224,7 @@
       <workItem from="1589788387023" duration="15000" />
       <workItem from="1589911350027" duration="2946000" />
       <workItem from="1590434805736" duration="3909000" />
-      <workItem from="1590442469933" duration="10886000" />
+      <workItem from="1590442469933" duration="15075000" />
     </task>
     <task id="LOCAL‎00001" summary="123">
       <created>1589211963385</created>
@@ -256,7 +244,13 @@
       <option name="presentableId" value="LOCAL‎00003" />
       <updated>1589212403698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎00004" summary="part 5">
+      <created>1590497826061</created>
+      <option name="number" value="LOCAL‎00004" />
+      <option name="presentableId" value="LOCAL‎00004" />
+      <updated>1590497826061</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +259,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="123" />
     <MESSAGE value="Hello" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hello" />
+    <MESSAGE value="part 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="part 5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="0" key="#Notifications" timestamp="1585822651455">
@@ -280,18 +275,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="92" y="92" width="1096" height="496" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1587996325133" />
-    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1590496630568">
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1590578363267">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590496630568" />
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590578363267" />
     <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589309408381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1589309408381" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1589212399010">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590497807186">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589212399010" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590497807186" />
     <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1585852572304">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -312,22 +307,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585835385527" />
-    <state width="1281" height="170" key="GridCell.Tab.0.bottom" timestamp="1590497514609">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom" timestamp="1590578956528">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590497514609" />
-    <state width="1281" height="170" key="GridCell.Tab.0.center" timestamp="1590497514538">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590578956528" />
+    <state width="1281" height="170" key="GridCell.Tab.0.center" timestamp="1590578956526">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590497514538" />
-    <state width="1281" height="170" key="GridCell.Tab.0.left" timestamp="1590497514526">
+    <state width="1281" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590578956526" />
+    <state width="1281" height="170" key="GridCell.Tab.0.left" timestamp="1590578956526">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590497514526" />
-    <state width="1281" height="170" key="GridCell.Tab.0.right" timestamp="1590497514538">
+    <state width="1281" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590578956526" />
+    <state width="1281" height="170" key="GridCell.Tab.0.right" timestamp="1590578956527">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1281" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590497514538" />
+    <state width="1281" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590578956527" />
     <state width="1281" height="212" key="GridCell.Tab.1.bottom" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -360,10 +355,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="60" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585852582392" />
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1589212412015">
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1590576159988">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589212412015" />
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590576159988" />
     <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1590442469139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

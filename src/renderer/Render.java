@@ -61,7 +61,7 @@ public class Render {
                 else
                 {
                     Point3D closetPoint=getClosetPoint(intersections);
-                _imagewriter.writePixel(j-1,i-1,calcColor(closetPoint));
+                _imagewriter.writePixel(j-1,i-1,calcColor(closetPoint).getColor());
             }
             
         }
@@ -73,9 +73,9 @@ public class Render {
 
 }
 
-    private java.awt.Color calcColor(Point3D closetPoint) {
+    private Color calcColor(Point3D closetPoint) {
 
-        return _scene.getAmbientLight().GetIntensity();
+        return _scene.getAmbientLight().getIntensity();
     }
 
     private Point3D getClosetPoint(List<Point3D> intersectionpoints) {
