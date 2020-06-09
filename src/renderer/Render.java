@@ -7,6 +7,7 @@ import primitives.Color;
 import primitives.Point3D;
 import primitives.*;
 import scene.Scene;
+import static geometries.Intersectable.GeoPoint;
 
 import java.awt.*;
 import java.util.List;
@@ -52,7 +53,7 @@ public class Render {
         for (int i=0; i<ny ; i++) {
             for (int j = 0; j <nx ; j++) {
                  ray=camera.constructRayThroughPixel(nx,ny,i,j,distance,width,height);
-                List<Point3D> intersections=_scene.getGeometries().findIntersections(ray);
+                List<GeoPoint> intersections=_scene.getGeometries().findIntersections(ray);
                 if(intersections==null)
                 {
                     _imagewriter.writePixel(j,i,background);
@@ -60,8 +61,9 @@ public class Render {
                 }
                 else
                 {
-                    Point3D closetPoint=getClosetPoint(intersections);
-                _imagewriter.writePixel(j-1,i-1,calcColor(closetPoint).getColor());
+                    GeoPoint closetPoint=getClosetPoint(intersections);
+
+                _imagewriter.writePixel(j,i,calcColor(closetPoint).getColor());
             }
             
         }
@@ -73,25 +75,65 @@ public class Render {
 
 }
 
-    private Color calcColor(Point3D closetPoint) {
+    private Color calcColor(GeoPoint intersection) {
+        Color color = _scene.getAmbientLight().get_intensity();
+        color = color.add(intersection.geometry.get_emission());
+        Vector v = intersection.point.subtract(_scene.getCamera().get_p0()).normalize();
+        Vector n = intersection.geometry.getNormal(intersection.point);
+        Material material = intersection.geometry.get_material();
+        int nShininess = material.get_nShininess();
+        double kd = material.get_kD();
+        double ks = material.get_kS();
+        for (LightSource lightSource : _scene.get_Lights()) {
+            Vector l=lightSource.getL(intersection.point);
+            if(sign(n.dotProduct(l))==sign(n.dotProduct(v)))
+            {
+                Color lightIntensity=lightSource.getIntensity((intersection.point));
+                color=color.add(calcDiffusive(kd,l,n,lightIntensity),
+                                 calcSpecular(ks,l,n,v,nShininess,lightIntensity));
+            }
+        }
+        return color;
 
-        return _scene.getAmbientLight().getIntensity();
     }
-
-    private Point3D getClosetPoint(List<Point3D> intersectionpoints) {
+    private GeoPoint getClosetPoint(List<GeoPoint> intersectionpoints) {
         Point3D p0 = _scene.getCamera().get_p0();
-        Point3D p1 = null;
+        GeoPoint p1 = null;
         double minDist = Double.MAX_VALUE;
         double currentdistance = 0;
-        for (Point3D point : intersectionpoints
+        for (GeoPoint geoPoint : intersectionpoints
         ) {
-            currentdistance = p0.distance(point);
+            currentdistance = p0.distance(geoPoint.getPoint());
             if (currentdistance < minDist) {
                 minDist = currentdistance;
-                p1 = point;
+                p1 = geoPoint;
             }
         }
         return p1;
+
+    }
+    private Color calcSpecular(double ks,Vector l,Vector n,Vector v,int nShininess,Color IL)
+    {
+        double ln=l.dotProduct(n);
+        Vector r=l.add(n.scale(-2*ln));
+        double vr=v.dotProduct(r);
+        Color specular=IL.scale(ks*Math.pow(-vr,nShininess));
+        return specular;
+    }
+    private Color calcDiffusive(double kD,Vector l,Vector n,Color IL)
+    {
+        double ln=l.dotProduct(n);
+        Color diffusive=IL.scale(kD*Math.abs(ln));
+        return diffusive;
+    }
+    private boolean sign(double vn)
+    {
+        boolean positive;
+        if(vn>0)
+            positive=true;
+        else
+            positive=false;
+        return positive;
 
     }
 }

@@ -2,11 +2,9 @@ package scene;
 
 import elements.*;
 import geometries.Geometries;
-import geometries.Geometry;
 import geometries.Intersectable;
-import geometries.Sphere;
 import primitives.Color;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Scene {
@@ -16,7 +14,7 @@ public class Scene {
     private Camera camera;
     private double distance;
     private Geometries _geometries = new Geometries();
-
+    private List<LightSource> _Lights=null;
     public Scene(String name) {
         this.name = name;
     }
@@ -67,6 +65,16 @@ public class Scene {
 
     public void setDistance(double distance) {
         this.distance = distance;
+    }
+
+    public List<LightSource> get_Lights() {
+        return _Lights;
+    }
+    public void addLights(LightSource lights) {
+        if (_Lights == null) {
+            _Lights = new LinkedList<>();
+        }
+        _Lights.add(lights);
     }
 
     public void addGeometries(Intersectable... geometries) {

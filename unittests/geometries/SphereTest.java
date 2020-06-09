@@ -1,7 +1,7 @@
 package geometries;
 
 
-
+import static geometries.Intersectable.GeoPoint;
 import org.junit.jupiter.api.Test;
 import primitives.Point3D;
 import primitives.Ray;
@@ -66,10 +66,10 @@ class SphereTest {
                 "Ray's line out of sphere");
 
         // TC02: Ray starts before and crosses the sphere (2 points)
-        List<Point3D> result = sphere.findIntersections(new Ray(new Point3D(-1, 0, 0), new Vector(3, 1, 0)));
+        List<GeoPoint> result = sphere.findIntersections(new Ray(new Point3D(-1, 0, 0), new Vector(3, 1, 0)));
 
         assertEquals( 2, result.size(),"Wrong number of points");
-        if (result.get(0).getX().get() > result.get(1).getX().get()) {
+        if (result.get(0).getPoint().getX().get() > result.get(1).getPoint().getX().get()) {
             result = Arrays.asList(result.get(1), result.get(0));
         }
         assertEquals(exp, result,"Ray crosses sphere");
@@ -100,7 +100,7 @@ class SphereTest {
         result = sphere.findIntersections(new Ray(new Point3D(1, -2, 0), new Vector(0, 1, 0)));
 
         assertEquals( 2, result.size(),"Wrong number of points");
-        if (result.get(0).getY().get() > result.get(1).getY().get()) {
+        if (result.get(0).getPoint().getY().get() > result.get(1).getPoint().getY().get()) {
             result =  Arrays.asList(result.get(1), result.get(0));
         }
         assertEquals( Arrays.asList(new Point3D(1, -1, 0), new Point3D(1, 1, 0)), result,

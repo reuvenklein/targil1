@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618ee78f-69b9-48c5-a954-1d0dc641e454" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/elements/DirectionalLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/LightSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/PointLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/elements/SpotLight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/primitives/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unittests/LightsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Geometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Geometry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Plane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Plane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Polygon.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/RadialGeometry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/RadialGeometry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Sphere.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Sphere.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Targil_1/geometries/Tube.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Targil_1/geometries/Tube.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/elements/AmbientLight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/elements/AmbientLight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Cylinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Cylinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Geometries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Geometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Geometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Polygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/RadialGeometry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Sphere.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Sphere.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/Tube.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/Tube.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometries/intersectable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometries/intersectable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Render.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Render.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scene/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scene/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/GeometriesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/geometries/SphereTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/geometries/SphereTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/unittests/renderer/RenderTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +57,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Arquillian JUnit Test Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,7 +70,7 @@
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="reuvenklein" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="Targil_2" />
+    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="targil1" />
   </component>
   <component name="ProjectId" id="1ZaSsLW0Bcx2mTNH6yoRGZOSlGj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -60,6 +91,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -80,38 +112,57 @@
       <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="primitives" />
       <recent name="scene" />
       <recent name="geometries" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RenderTests.basicRenderTwoColorTest">
-    <configuration name="ImageWriterTest.writeToImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LightsTests.spherePoint">
+    <configuration name="LightsTests.sphereDirectional" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.ImageWriterTest" />
-      <option name="METHOD_NAME" value="writeToImage" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LightsTests" />
+      <option name="METHOD_NAME" value="sphereDirectional" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaneTest.findIntersection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LightsTests.spherePoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometries" />
-      <option name="MAIN_CLASS_NAME" value="geometries.PlaneTest" />
-      <option name="METHOD_NAME" value="findIntersection" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LightsTests" />
+      <option name="METHOD_NAME" value="spherePoint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LightsTests.sphereSpot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Targil_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LightsTests" />
+      <option name="METHOD_NAME" value="sphereSpot" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LightsTests.trianglesDirectional" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Targil_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LightsTests" />
+      <option name="METHOD_NAME" value="trianglesDirectional" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LightsTests.trianglesPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Targil_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LightsTests" />
+      <option name="METHOD_NAME" value="trianglesPoint" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,60 +183,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RenderTests.basicRenderTwoColorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="renderer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="renderer" />
-      <option name="MAIN_CLASS_NAME" value="renderer.RenderTests" />
-      <option name="METHOD_NAME" value="basicRenderTwoColorTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SphereTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometries" />
-      <option name="MAIN_CLASS_NAME" value="geometries.SphereTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SphereTest.findIntersectionsTestEP_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Targil_1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="geometries" />
-      <option name="MAIN_CLASS_NAME" value="geometries.SphereTest" />
-      <option name="METHOD_NAME" value="findIntersectionsTestEP_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RenderTests.basicRenderTwoColorTest" />
-        <item itemvalue="JUnit.ImageWriterTest.writeToImage" />
-        <item itemvalue="JUnit.PlaneTest.findIntersection" />
-        <item itemvalue="JUnit.SphereTest.findIntersectionsTestEP_1" />
-        <item itemvalue="JUnit.SphereTest" />
+        <item itemvalue="JUnit.LightsTests.spherePoint" />
+        <item itemvalue="JUnit.LightsTests.trianglesPoint" />
+        <item itemvalue="JUnit.LightsTests.trianglesDirectional" />
+        <item itemvalue="JUnit.LightsTests.sphereSpot" />
+        <item itemvalue="JUnit.LightsTests.sphereDirectional" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +225,7 @@
       <workItem from="1589788387023" duration="15000" />
       <workItem from="1589911350027" duration="2946000" />
       <workItem from="1590434805736" duration="3909000" />
-      <workItem from="1590442469933" duration="16084000" />
+      <workItem from="1590442469933" duration="79780000" />
     </task>
     <task id="LOCAL‎00001" summary="123">
       <created>1589211963385</created>
@@ -253,7 +257,13 @@
       <option name="presentableId" value="LOCAL‎00005" />
       <updated>1590579101215</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎00006" summary="part 5.">
+      <created>1590580046681</created>
+      <option name="number" value="LOCAL‎00006" />
+      <option name="presentableId" value="LOCAL‎00006" />
+      <updated>1590580046681</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,18 +289,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="92" y="92" width="1096" height="496" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1587996325133" />
-    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1590578363267">
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1591219803131">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1590578363267" />
+    <state x="445" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1591219803131" />
+    <state x="370" y="116" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1591111912396">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="370" y="116" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1591111912396" />
     <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589309408381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="436" y="199" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1589309408381" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590579092614">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1590580044505">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590579092614" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1590580044505" />
     <state x="420" y="95" key="FileChooserDialogImpl" timestamp="1590579620097">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -315,22 +329,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="423" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585835385527" />
-    <state width="640" height="170" key="GridCell.Tab.0.bottom" timestamp="1590579980601">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom" timestamp="1591643080093">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="640" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590579980601" />
-    <state width="640" height="170" key="GridCell.Tab.0.center" timestamp="1590579980601">
+    <state width="1281" height="170" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591643080093" />
+    <state width="1281" height="170" key="GridCell.Tab.0.center" timestamp="1591643080093">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="640" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590579980601" />
-    <state width="640" height="170" key="GridCell.Tab.0.left" timestamp="1590579980601">
+    <state width="1281" height="170" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591643080093" />
+    <state width="1281" height="170" key="GridCell.Tab.0.left" timestamp="1591643080092">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="640" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590579980601" />
-    <state width="640" height="170" key="GridCell.Tab.0.right" timestamp="1590579980601">
+    <state width="1281" height="170" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591643080092" />
+    <state width="1281" height="170" key="GridCell.Tab.0.right" timestamp="1591643080093">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="640" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590579980601" />
+    <state width="1281" height="170" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591643080093" />
     <state width="1281" height="212" key="GridCell.Tab.1.bottom" timestamp="1590495085224">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -363,10 +377,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="60" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585852582392" />
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1590579972372">
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2" timestamp="1590580056785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590579972372" />
+    <state x="232" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590580056785" />
     <state x="336" y="164" key="com.intellij.ide.util.TipDialog" timestamp="1590442469139">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -379,6 +393,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="411" y="58" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1589310082844" />
+    <state x="370" y="95" key="extract.method.dialog" timestamp="1591191726878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="370" y="95" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1591191726878" />
+    <state x="271" y="37" width="737" height="606" key="find.popup" timestamp="1591194332755">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="271" y="37" width="737" height="606" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1591194332755" />
     <state x="430" y="204" key="git4idea.rebase.GitRebaseDialog" timestamp="1590579877207">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -391,6 +413,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="382" y="0" key="refactoring.ChangeSignatureDialog/0.0.1280.680@0.0.1280.680" timestamp="1585168403669" />
+    <state x="303" y="1" key="search.everywhere.popup" timestamp="1591030646532">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591030646532" />
     <state x="362" y="252" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1585824618434">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

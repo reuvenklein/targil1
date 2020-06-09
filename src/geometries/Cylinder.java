@@ -1,13 +1,11 @@
 package geometries;
 
-import primitives.Point3D;
-import primitives.Ray;
-import primitives.Vector;
+import primitives.*;
 
 public class Cylinder extends Tube {
     Ray _axis;
 
-    public Cylinder(double _radius, Ray _axisRay) {
+    public Cylinder( double _radius, Ray _axisRay) {
         super(_radius, _axisRay);
     }
 

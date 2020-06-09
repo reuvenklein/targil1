@@ -1,9 +1,8 @@
 package geometries;
 
-import primitives.Point3D;
-import primitives.Ray;
-import primitives.Vector;
+import primitives.*;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import static primitives.Util.isZero;
@@ -14,12 +13,18 @@ public class Triangle extends  Polygon {
           {
               super(p1,p2,p3);
           }
-    public Vector getNormal(Point3D point) {
-        return _plane.getNormal();
+
+    public Triangle(Color emissionLight, Point3D p1, Point3D p2, Point3D p3) {
+        super(emissionLight,p1,p2,p3);
     }
-    public List<Point3D> findIntersections(Ray ray)
+    public Triangle(Color emissionLight, Material material, Point3D p1, Point3D p2, Point3D p3) {
+        super(emissionLight,material,p1,p2,p3);
+    }
+
+
+    public List<GeoPoint> findIntersections(Ray ray)
     {
-        List<Point3D>intersect=_plane.findIntersections(ray);
+        List<GeoPoint>intersect=_plane.findIntersections(ray);
         if(intersect==null)
             return null;
         Vector v1=_vertices.get(0).subtract(ray.get_p0());
@@ -33,11 +38,16 @@ public class Triangle extends  Polygon {
        double d3=ray.get_dir().dotProduct(N3);
        if(isZero(d1)||isZero(d2)||isZero(d3))
            return null;
-       if(d1>0&&d2>0&&d3>0||d1<0&&d2<0&&d3<0)
-           return intersect;
-       else return null;
+       if(d1>0&&d2>0&&d3>0||d1<0&&d2<0&&d3<0) {
+           List<GeoPoint> result = new LinkedList<>();
+           for (GeoPoint geo:intersect)
+           {
+               result.add(new GeoPoint(this,geo.getPoint()));
+           }
+           return result;
+       }
 
-
+      return null;
     }
 }
 
